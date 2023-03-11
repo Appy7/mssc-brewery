@@ -8,4 +8,7 @@ import java.util.UUID;
 
 
 public interface BeerRepository extends PagingAndSortingRepository<Beer, UUID> {
+    int count();
+
+    void save(Beer build);
 }
